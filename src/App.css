@@ -1,0 +1,158 @@
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #070029;
+  color: white;
+  padding: 1em;
+  z-index: 1;
+  height: 5em;
+  width: 100vw;
+}
+
+nav {
+  position: fixed;
+  top: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  color: #070029;
+  z-index: 1;
+}
+
+main {
+  margin-top: 5em;
+  padding: 2em;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 7em;
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.main-title {
+  padding-top: 2em;
+  text-align: center;
+  font-size: 5em;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.main-subtitle {
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #ffffff;
+  z-index: 1;
+  padding-top: 3em;
+}
+
+.shade {
+  background-color: #070029;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.chat-button {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 2em;
+  right: 2em;
+  width: 6em;
+  background-color: goldenrod;
+  color: #ffffff;
+  border: none;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 200;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 1em;
+}
+
+nav ul li {
+  margin: 0 0.5em;
+}
+
+.yellow {
+  color: goldenrod;
+}
+
+.banner-title {
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  max-width: 7em;
+  line-height: 1em;
+}
+
+.banner-logo {
+  height: 5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
